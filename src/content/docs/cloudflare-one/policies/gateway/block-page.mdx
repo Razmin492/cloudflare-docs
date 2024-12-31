@@ -65,6 +65,6 @@ You can add a Mailto link to your custom block page, which allows users to direc
 
 If your users receive a security risk warning in their browser when visiting a blocked page, check that you have correctly [installed a Cloudflare certificate](/cloudflare-one/connections/connect-devices/user-side-certificates/manual-deployment/) on their devices.
 
-If an HTTP request to be blocked does not arrive at the same Cloudflare data center as its DNS query, Gateway will display the default block page instead of your custom block page.
+If an HTTP request that matches a block policy does not arrive at the same Cloudflare data center as its DNS query, Gateway will display the default block page instead of your custom block page.
 
-If the HTTP request comes from a different IP address from the DNS request, they cannot be correlated and the rule Id, custom message, and some other fields may be missing. This can happen when a recursive resolver source IP differs from the device IP
+If the HTTP request comes from a different IP address than the DNS request, Gateway may not display the rule ID, custom message, and some other fields on the block page. This can happen when a recursive DNS resolver's source IP address differs from the user device's IP address.
