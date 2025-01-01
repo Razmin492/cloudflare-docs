@@ -1,107 +1,105 @@
----
-title: Overview
-type: overview
-pcx_content_type: overview
-sidebar:
-  order: 1
-head:
-  - tag: title
-    content: Cloudflare Pages documentation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            margin-top: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
 
----
+    <header>
+        <h1>Welcome to My Simple Web Page</h1>
+    </header>
 
-import { CardGrid, Description, Feature, LinkTitleCard, Plan, RelatedProduct, Render } from "~/components"
+    <section>
+        <h2>About This Page</h2>
+        <p>This is a basic web page example that includes a few common HTML elements such as images, links, and a contact form. Feel free to explore and learn more!</p>
 
-<Description>
+        <h2>Image Example</h2>
+        <img src="https://via.placeholder.com/600x300" alt="Placeholder Image">
 
-Create full-stack applications that are instantly deployed to the Cloudflare global network. 
-</Description>
+        <h2>Visit My Favorite Website</h2>
+        <p>Click <a href="https://www.example.com" target="_blank">here</a> to visit my favorite website.</p>
 
-<Plan type="all" />
+        <h2>Contact Me</h2>
+        <div class="form-container">
+            <h3>Send me a message</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-Deploy your Pages project by connecting to [your Git provider](/pages/get-started/git-integration/), uploading prebuilt assets directly to Pages with [Direct Upload](/pages/get-started/direct-upload/) or using [C3](/pages/get-started/c3/) from the command line.
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-***
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-## Features
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-<Feature header="Pages Functions" href="/pages/functions/">
+    <footer>
+        <p>&copy; 2025 My Web Page. All rights reserved.</p>
+    </footer>
 
-Use Pages Functions to deploy server-side code to enable dynamic functionality without running a dedicated server.
-
-
-</Feature>
-
-<Feature header="Rollbacks" href="/pages/configuration/rollbacks/">
-
-Rollbacks allow you to instantly revert your project to a previous production deployment.
-
-
-</Feature>
-
-<Feature header="Redirects" href="/pages/configuration/redirects/">
-
-Set up redirects for your Cloudflare Pages project.
-
-
-</Feature>
-
-***
-
-## Related products
-
-<RelatedProduct header="Workers" href="/workers/" product="workers">
-
-Cloudflare Workers provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure.
-
-
-</RelatedProduct>
-
-<RelatedProduct header="R2" href="/r2/" product="r2">
-
-Cloudflare R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
-
-
-</RelatedProduct>
-
-<RelatedProduct header="D1" href="/d1/" product="d1">
-
-D1 is Cloudflare’s native serverless database. Create a database by importing data or defining your tables and writing your queries within a Worker or through the API.
-
-
-</RelatedProduct>
-
-<RelatedProduct header="Zaraz" href="/zaraz/" product="zaraz">
-
-Offload third-party tools and services to the cloud and improve the speed and security of your website.
-
-
-</RelatedProduct>
-
-***
-
-## More resources
-
-<CardGrid>
-
-<LinkTitleCard title="Limits" href="/pages/platform/limits/" icon="document">
-Learn about limits that apply to your Pages project (500 deploys per month on the Free plan).
-</LinkTitleCard>
-
-<LinkTitleCard title="Migration guides" href="/pages/migrations/" icon="pen">
-Migrate to Pages from your existing hosting provider.
-</LinkTitleCard>
-
-<LinkTitleCard title="Framework guides" href="/pages/framework-guides/" icon="open-book">
-Deploy popular frameworks such as React, Hugo, and Next.js on Pages.
-</LinkTitleCard>
-
-<LinkTitleCard title="Developer Discord" href="https://discord.cloudflare.com" icon="discord">
-Connect with the Workers community on Discord to ask questions, show what you are building, and discuss the platform with other developers.
-</LinkTitleCard>
-
-<LinkTitleCard title="@CloudflareDev" href="https://x.com/cloudflaredev" icon="x.com">
-Follow @CloudflareDev on Twitter to learn about product announcements, and what is new in Cloudflare Workers.
-</LinkTitleCard>
-
-</CardGrid>
+</body>
+</html>
